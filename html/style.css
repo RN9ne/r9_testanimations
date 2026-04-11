@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    color: #e5eefb;
+    overflow: hidden;
+}
+
+#menu-container {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    width: 350px;
+    background: linear-gradient(220deg, rgba(24, 32, 44, 0.95), rgba(10, 14, 20, 0.93));
+    border-radius: 12px;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#menu-container.hidden {
+    display: none;
+}
+
+#menu-content {
+    padding: 16px;
+    position: relative;
+}
+
+#menu-header {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(42, 30, 117, 0.3);
+}
+
+#header-title {
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(170, 100, 255, 0.95) 0%, rgba(42, 30, 117, 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.5px;
+}
+
+#menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.menu-item {
+    padding: 10px 12px;
+    background: rgba(50, 50, 50, 0.4);
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.1s;
+    color: #e5eefb;
+    border-radius: 6px;
+}
+
+.menu-item.selected {
+    background: rgba(42, 30, 117, 0.5);
+    border-left: 3px solid #2A1E75;
+    color: #ffff00;
+    font-weight: 500;
+}
+
+.menu-item.paired {
+    color: #88d4ff;
+}
+
+.menu-item.paired.selected {
+    color: #ffff00;
+}
+
+.menu-section-header {
+    padding: 8px 12px;
+    background: rgba(30, 30, 30, 0.5);
+    border-left: 3px solid transparent;
+    color: #aaaaaa;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+}
+
+.menu-section-header.selected {
+    background: rgba(42, 30, 117, 0.5);
+    border-left: 3px solid #2A1E75;
+    color: #ffff00;
+}
+
+.menu-section-header.paired {
+    color: #88d4ff;
+    border-left: 3px solid #6699dd;
+}
+
+.menu-section-header.paired.selected {
+    background: rgba(42, 30, 117, 0.5);
+    color: #ffff00;
+    border-left: 3px solid #2A1E75;
+}
+
+#menu-hint {
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(42, 30, 117, 0.2);
+    font-size: 12px;
+    color: #888888;
+}
+
+#menu-hint p {
+    margin: 0;
+}
+
+#info-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(220deg, rgba(24, 32, 44, 0.95), rgba(10, 14, 20, 0.93));
+    border-radius: 12px;
+    padding: 16px 18px;
+    max-width: 300px;
+    border-bottom: 1px solid rgba(255, 102, 0, 0.2);
+}
+
+#info-panel.hidden {
+    display: none;
+}
+
+#info-text {
+    color: #ffaa00;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Scrollbar styling */
+#menu-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#menu-list::-webkit-scrollbar-track {
+    background: rgba(50, 50, 50, 0.3);
+}
+
+#menu-list::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, rgba(170, 100, 255, 0.6), rgba(42, 30, 117, 0.6));
+    border-radius: 3px;
+}
+
+#menu-list::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, rgba(170, 100, 255, 0.8), rgba(42, 30, 117, 0.8));
+}
+
+/* Watermark */
+#watermark {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 12px;
+    color: #888888;
+    pointer-events: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
