@@ -808,4 +808,69 @@ ConfigAnimations = {
             },
         }
     },
+
+    forcechocke = {
+        label = "Force chocke",
+        animations = {
+            -- Paired Animations
+            {
+                name = "FullClip",
+                dict = "r9@force@chocke",
+                anim = "atk_full",
+                flags = 0,
+                paired = {
+                    npcAnim = "vic_full",
+                    distance = 2.5,
+                    npcHeadingOffset = 180.0
+                }
+            },
+            {
+                name = "Loop",
+                dict = "r9@force@chocke",
+                anim = "atk_loop",
+                flags = 1,
+                paired = {
+                    npcAnim = "vic_loop",
+                    distance = 2.5,
+                    npcHeadingOffset = 180.0
+                }
+            },
+            {
+                name = "ATK Start",
+                dict = "r9@force@chocke",
+                anim = "atk_start",
+                flags = 0
+            },
+            {
+                name = "ATK Loop",
+                dict = "r9@force@chocke",
+                anim = "atk_loop",
+                flags = 1
+            },
+            {
+                name = "ATK End",
+                dict = "r9@force@chocke",
+                anim = "atk_end",
+                flags = 0
+            },
+            {
+                name = "VIC Start",
+                dict = "r9@force@chocke",
+                anim = "vic_start",
+                flags = 0
+            },
+            {
+                name = "VIC Loop",
+                dict = "r9@force@chocke",
+                anim = "vic_loop",
+                flags = 1
+            },
+            {
+                name = "VIC End",
+                dict = "r9@force@chocke",
+                anim = "vic_end",
+                flags = 0
+            },
+        }
+    },
 }

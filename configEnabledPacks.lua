@@ -14,4 +14,5 @@ ConfigEnabledPacks = {
     laptop = true,
     potencejump = true,
     wallclimb = true,
+    forcechocke = true,
 }
