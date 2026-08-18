@@ -873,4 +873,82 @@ ConfigAnimations = {
             },
         }
     },
+
+    caster = {
+        label = "Cast Animations",
+        animations = {
+            {
+                name = "Two Hand Cast",
+                dict = "r9@caster",
+                anim = "twohandcast",
+                flags = 0
+            },
+            {
+                name = "Two Hand Charge",
+                dict = "r9@caster",
+                anim = "twohandcharge",
+                flags = 0
+            },
+            {
+                name = "Two Hand High Cast",
+                dict = "r9@caster",
+                anim = "twohandhighcast",
+                flags = 0
+            },
+            {
+                name = "Ground Cast",
+                dict = "r9@caster",
+                anim = "groundcast",
+                flags = 0
+            },
+            {
+                name = "Left Cast Two",
+                dict = "r9@caster",
+                anim = "leftcasttwo",
+                flags = 0
+            },
+            {
+                name = "Left Cast One",
+                dict = "r9@caster",
+                anim = "leftcastone",
+                flags = 0
+            },
+            {
+                name = "Overhead Cast",
+                dict = "r9@caster",
+                anim = "overheadcast",
+                flags = 0
+            },
+            {
+                name = "Overhead Right Cast",
+                dict = "r9@caster",
+                anim = "overheadrightcast",
+                flags = 0
+            },
+            {
+                name = "Point Cast",
+                dict = "r9@caster",
+                anim = "pointcast",
+                flags = 0
+            },
+            {
+                name = "Right Cast One",
+                dict = "r9@caster",
+                anim = "rightcastone",
+                flags = 0
+            },
+            {
+                name = "Self Cast",
+                dict = "r9@caster",
+                anim = "selfcast",
+                flags = 0
+            },
+            {
+                name = "Wave Cast",
+                dict = "r9@caster",
+                anim = "wavecast",
+                flags = 0
+            },
+        }
+    },
 }

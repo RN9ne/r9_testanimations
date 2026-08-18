@@ -15,4 +15,5 @@ ConfigEnabledPacks = {
     potencejump = true,
     wallclimb = true,
     forcechocke = true,
+    caster = true,
 }
